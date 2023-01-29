@@ -1,8 +1,8 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import location from '../media/LOCATION.png';
-import phone from '../media/PHONE.png';
-import mail from '../media/MAIL.png';
+import location from '../media/LOCATION.svg';
+import phone from '../media/PHONE.svg';
+import mail from '../media/MAIL.svg';
 import fb from '../media/facebook.png';
 import insta from '../media/insta.png';
 import twitter from '../media/twitter.png';
@@ -22,10 +22,10 @@ function Footer(props) {
     return (
         <>
             <footer>
-               <div className='content' style={{width:'80vw'}}>
+               <div className='content' style={{width:'100vw'}}>
                     <div>
                         <h2>Service</h2>
-                        <ul style={{listStyle:'none'}}>
+                        <ul style={{listStyle:'none', fontSize: '20px'}}>
                             <li><Link to='/' onClick={top}>Home</Link></li>
                             <li><Link to='/' onClick={about}>About</Link></li>
                             <li><Link to='/' onClick={services}>Service</Link></li>
@@ -39,31 +39,31 @@ function Footer(props) {
                             <li style={{display:'flex'}}>
                                 <img src={location} alt='..'/>
                                 <div style={{display:'inline-block', marginLeft:'20px'}}>
-                                    <p>Office Address</p><h3>Kisumu some place</h3>
+                                    <p>Office Address</p><h3>Kisumu</h3>
                                 </div>
                             </li>
                             <li style={{display:'flex'}}>
                                 <img src={mail} alt='..'/>
                                 <div style={{display:'inline-block',marginLeft:'20px'}}>
-                                    <p>Email Us</p><h3>someemaildress@email.com</h3>
+                                    <p>Email Us</p><h3>corporate@kiriconsultants.com </h3>
                                 </div>
                             </li>
                             <li style={{display:'flex'}}>
                                 <img src={phone} alt='..'/>
                                 <div style={{diplay:'inline-block',marginLeft:'20px'}}>
-                                    <p>Call Us</p><h3>+25470090099848</h3>
+                                    <p>Call Us</p><h3> +254 741 248643 | +254 719 297091 </h3>
                                 </div>
                             </li>
                         </ul>
                     </div>
                </div>
             <div className='social-icons'>
-                <a href='#' target='_blank'><img src={fb} alt="..."/></a>
-                <a href='#' target='_blank'><img style={{marginLeft:'50px'}} src={twitter} alt="..."/></a>
-                <a href='#' target='_blank'><img style={{marginLeft:'50px'}} src={linkedIn} alt="..."/></a>
-                <a href='#' target='_blank'><img style={{marginLeft:'50px'}} src={insta} alt="..."/></a>
+                <a href='https://www.facebook.com/kirimarketingconsultants' target='_blank'><img src={fb} alt="..."/></a>
+                <a href='https://www.twitter.com/kiriconsultants' target='_blank'><img style={{marginLeft:'50px'}} src={twitter} alt="..."/></a>
+                <a href='https://www.linkedin.com/company/kiri-consultants/' target='_blank'><img style={{marginLeft:'50px'}} src={linkedIn} alt="..."/></a>
+                <a href='https://www.instagram.com/kiriconsultants/' target='_blank'><img style={{marginLeft:'50px'}} src={insta} alt="..."/></a>
             </div>
-            <p className='last' align='center'>©2022 Kiri Marketing and PR Consultants </p>
+            <p className='last' align='center'>©2023 Kiri Marketing and PR Consultants </p>
             </footer>
         </>
     );

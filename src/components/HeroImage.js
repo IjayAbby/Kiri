@@ -10,12 +10,12 @@ function HeroImage(props) {
             <Navbar/>
                 <div className='Hero-image'>
                     <div className='hero-text'>
-                        <h1 className='Enhancing'>
+                        <h1 className='Enhancing heading'>
                         Enhancing Brands,<br/>
                         Enhancing Lives
                         </h1>
                         <p className='text'>
-                            We focus on deep customer insights to provide growth.
+                            We focus on deep customer insights to provide growth<br/> to our clients.
                         </p>
                         <button onClick={contacts}>
                             Contact Us

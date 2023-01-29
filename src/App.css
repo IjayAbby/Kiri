@@ -2,7 +2,7 @@
 *{
   padding: 0;
   margin: 0;
-  font-family: 'League Spartan', sans-serif;
+  font-family: 'Nunito', sans-serif;
   font-size: medium;
 }
 
@@ -18,12 +18,20 @@ html{
   z-index: 2;
   display: none;
 }
+.heading{
+  font-family: 'League Spartan', sans-serif;
+}
+.sub-heading {
+  font-weight: 500;
+  line-height: '2';
+  font-size: 60px;
+}
 nav{
   position: fixed;
   top:0;
   left: 0;
   right: 0;
-  padding:  40px 0 10px 128px;
+  padding:  30px 0 0px 150px;
   display: flex;
   background:  linear-gradient(90deg, rgba(172, 27, 41, 0.86) 23.32%, rgba(233, 175, 63, 0.81) 59.86%);
   backdrop-filter: blur(3rem);
@@ -32,7 +40,7 @@ nav{
   box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
 }
 .logo{
-  margin-top: -25px;
+  margin-top: -35px;
 }
 
 nav ul{
@@ -45,7 +53,6 @@ nav ul a{
   font-family: 'League Spartan', sans-serif;
   font-weight: 500;
   font-size: 19px;
-  line-height: 30px;
   margin-left: 32px;
   color: #1E1E1E;
   text-decoration: none;
@@ -101,37 +108,40 @@ nav ul a:hover{
 /* Hero Image */
 .Hero{
   padding-top: 100px;
-  background: linear-gradient(90deg, rgba(172, 27, 41, 0.86) 23.32%, rgba(233, 175, 63, 0.81) 59.86%),url('./media/Hero\ Image.png') no-repeat;
+  background: linear-gradient(90deg, rgba(172, 27, 41, 0.86) 23.32%, rgba(233, 175, 63, 0.81) 59.86%),url('./media/Hero\ Image.jpg') no-repeat;
   background-size:cover;
 }
 .Hero-image{
   width: 100%;
   padding-top: 100px;
-  height: 40vh;
+  height: 600px;
 }
 .hero-text{
   margin-left: 150px;
+  margin-top: 100px;
 }
 .hero-text .Enhancing{
-  font-size:50px;
-  font-weight:'bolder';
+  font-size: 70px;
+  font-weight: lighter;
   color:#fff;
 }
 .hero-text .text{
   margin-top:20px;
-  font-size:20px;
+  font-size:25px;
+  font-weight: 400;
+  line-height: 30px;
   color:#fff;
 }
 
 button{
   cursor: pointer;
-  margin-top:20px;
-   color:white;
-    background: #CC2031;
-    width: 120px;
-    height:60px;
-    border:none;
-    font-size: 18px;
+  margin-top:80px;
+  color:white;
+  background: #CC2031;
+  width: 140px;
+  height:70px;
+  border:none;
+  font-size: 18px;
 }
 
 /* about section */
@@ -153,12 +163,12 @@ button{
 }
 
 .grid-item {
-  font-size: 18px;
+  /* font-size: 18px; */
 }
 
 /* Rectangle 2 and 3*/
 .rectangle2{
-  /* width: 430px; */
+  margin-left: 12rem;
   height: 500px;
 }
 .vectorbuld2{
@@ -173,6 +183,8 @@ button{
 .vectorbuld2 h3{
   text-align: center;
   margin-top: 20px;
+  font-size: 50px;
+  font-weight: 500;
 }
 .vectorbuld2 p{
   text-align: center;
@@ -187,6 +199,7 @@ button{
 }
 .pic-grid h3{
   margin-top: 200px;
+  font-size: 20px;
 }
 .grid-item-1,.grid-item-2,.grid-item-3,.grid-item-4{
   width: 100%;
@@ -194,6 +207,7 @@ button{
   height: 260px;
   background: url('./media/Public\ relations\ image.png') no-repeat;
   background-size: cover;
+  
 }
 .grid-item-1:hover{
   background:  linear-gradient(0deg, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),url('./media/Public\ relations\ image.png') no-repeat;
@@ -262,13 +276,14 @@ button{
 
 /* card */
 .grid-card{
-  padding: 30px 20px 0 30px;
-  width: 500px;
-  height: 200px;
+  padding: 50px;
+  width: 600px;
+  height: 150px;
+  box-shadow: 0px 4px 4px rgba(0,0,0,0.25);
   background: linear-gradient(90deg, rgba(204, 32, 49, 0.2) 31.98%, rgba(233, 175, 63, 0.2) 100%);
 }
 .card-footer{
-  margin-top: 20px;
+  margin-top: 30px;
   display: flex;
 }
 .card-footer p{
@@ -288,15 +303,15 @@ button{
   width: 90vw;
 }
 .grid-percentage img{
-  margin:0 0 -5px 30px;
-  width: 15px;
-  height:15px;
+  margin:24 -8 -5px 30px;
+  width: 32px;
+  height:32px;
 }
 .grid-percentage h1{
-  margin-top: -30px;
+  margin-top: -56px;
   margin-left: 50px;
   font-weight: 100;
-  font-size: 30px;
+  font-size: 50px;
 }
 .grid-percentage p{
   font-weight: 500;
@@ -312,10 +327,12 @@ button{
   line-height: 33px;
   text-transform: uppercase;
   color: #1E1E1E;
+  margin-top: 14vh;
 }
 .worked-with .company-image{
   width: 90vw;
-  margin-top: 50px;
+  margin-top: 16px;
+  margin-bottom: 50px;
   display: flex;
   justify-content: space-around;
 }
@@ -340,10 +357,10 @@ button{
   background: url('./media/reflectionImage.png');
 }
 .grid-history-1 img{
-  margin-top: -360px;
   height: 380px;
   width: 380px;
   margin-left: 30px;
+  margin-top: 10vh;
 }
 .grid-history-2{
   margin-top: 20px;
@@ -379,10 +396,11 @@ button{
   line-height: 55px;
   text-align: center;
   margin-bottom: 20px;
+  margin-top: 20px;
 }
 .grid-article{
   display: grid;
-  grid-template-columns: repeat(2,1fr);
+  grid-template-columns: repeat(2, 700px);
   max-width: 100%;
 }
 .grid-article-1 h3{
@@ -392,7 +410,7 @@ button{
   margin-bottom: 5px;
 }
 .grid-article-1 img{
-  margin-top: 50px;
+  margin-top: 20px;
   width:80%;
   height: 60%;
 }
@@ -404,7 +422,7 @@ button{
   padding-right: 100px;
   padding-top: 30px;
   padding-bottom: 40px;
-  height: 500px;
+  height: 600px;
 }
 .grid-talk-more{
   background: url('./media/Vectorchat.png') no-repeat top left;
@@ -417,7 +435,7 @@ button{
   font-weight: 400;
   font-size: 72px;
   line-height: 66px;
-
+  margin-top: 120px;
   color: #1E1E1E;
 }
 .grid-talk-2{
@@ -429,7 +447,7 @@ button{
   padding-top: 26px;
   padding-left: 50px;
   width: 369px;
-  height: 490px;
+  height: 580px;
   background: rgba(233, 175, 63, 0.2);
 }
 .grid-talk-2 form input,.grid-talk-2 form textarea,.add-blog-form input,.add-blog-form textarea{
@@ -671,6 +689,7 @@ footer ul li{
   line-height: 30px;
   letter-spacing: 0.02em;
   color: #FFFAFA;
+  
 }
 footer ul li img{
   width: 32px;
@@ -679,6 +698,8 @@ footer ul li img{
 footer ul li a{
   text-decoration: none;
   color: white;
+  font-size: 20px;
+  font-weight: 600;
 }
 footer .social-icons{
   margin-top: 50px;

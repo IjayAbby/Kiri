@@ -61,7 +61,7 @@ function Navbar(props) {
                         <li className="nav-item">
                             <Link to='/' onClick={news} className="nav-link" >News</Link>
                         </li>
-                        <li className="nav-item">
+                        <li className="nav-item" style={{marginRight:'80px'}}>
                             <Link to='/' onClick={contacts} className="nav-link">Contacts</Link>
                         </li> 
                     </ul>
