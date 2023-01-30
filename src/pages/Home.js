@@ -4,7 +4,7 @@ import HeroImage from '../components/HeroImage';
 import rect2 from '../media/Rectangle 2.svg';
 import articleImage1 from "../media/articleImage1.png";
 import articleImage2 from "../media/articleImage2.png";
-import history from '../media/Our history background.svg';
+import history from '../media/Our history background.jpg';
 import image4 from '../media/image 4.svg';
 import image5 from '../media/image 5.svg';
 import image7 from '../media/image 7.svg';
@@ -19,6 +19,12 @@ import profile1 from '../media/Profile1.png';
 import profile2 from '../media/Profile2.png';
 import profile3 from '../media/Profile3.png';
 import profile4 from '../media/Profile4.png';
+import aboutimage from "../media/Group 6.jpg";
+import happy from "../media/Group 2.jpg";
+import positive from "../media/Group 3.jpg";
+import projects from "../media/Group 4.jpg";
+import loyal from "../media/Group 5.jpg";
+
 import toast from "react-hot-toast";
 
 function Home(props) {
@@ -108,44 +114,33 @@ function Home(props) {
             <HeroImage/>
             {/* about section */}
             <div className='about' id='about'>
-                <div className='grid'>
-                    <div className='grid-item'>
-                        <h2 className='heading' style={{fontSize: '50px', lineHeight: 2, fontWeight: 500}}>ABOUT US</h2>
-                            <p style={{fontWeight: 400 ,lineHeight: 1.2, fontSize: '20px'}}>
-                                One thing that sets us apart from other digital marketing agencies is that we are mission-driven and deeply invested in our clients’ work. We believe that mission-driven companies and social enterprises play a significant role in supporting the economic development and sustainability of the country.<br/><br/>
-                                Because you focus on changing the world, you deserve the best digital marketing, branding, and PR team to help you achieve your goals and increase impact work. One that understands the importance of telling your brand story, how to say it, and where to direct it.
-                            </p><br/>
-                        <h3 className="heading" style={{fontSize: '30px', fontWeight: 400}}>Mission Statement!</h3>
-                        <h4 style={{fontWeight: 400 ,lineHeight: 1.2, fontSize: '20px'}}>
-                        To contribute to client’s business growth through result oriented, innovative and creative strategies that will deliver the WOW factor.<br/><br/>
-                        </h4>
-                       
-
-                        <h3 className='heading' style={{fontSize: '30px', fontWeight: 400}}>Core Values</h3>
-                        <ul>
-                            <li style={{fontWeight: 400 ,lineHeight: 1, fontSize: '20px'}}>Professionalism</li>
-                            <li style={{fontWeight: 400 ,lineHeight: 1, fontSize: '20px'}}>Integrity</li>
-                            <li style={{fontWeight: 400 ,lineHeight: 1, fontSize: '20px'}}>Passion driven</li>
-                            <li style={{fontWeight: 400 ,lineHeight: 1, fontSize: '20px'}}>Authenticity</li>
-                        </ul>
-                    </div>
-                    <div>
-                        <img className='rectangle2' src={rect2} alt="about us"/>
+                <div className='grid-about'>
+                    <div class="grid max-w-screen-xl px-4 py-8 mx-auto lg:gap-8 xl:gap-0 lg:py-16 lg:grid-cols-12">
+                        <div class="mr-auto place-self-center lg:col-span-7">
+                            <h2 class="max-w-2xl mb-4 text-2xl tracking-tight leading-none md:text-4xl xl:text-5xl dark:text-white uppercase">About Us</h2>
+                            <p class="max-w-2xl mb-6 lg:mb-8 md:text-base lg:text-lg">One thing that sets us apart from other digital marketing agencies is that we are mission-driven and deeply invested in our clients’ work. We believe that mission-driven companies and social enterprises play a significant role in supporting the economic development and sustainability of the country.<br/><br/>
+                            Because you focus on changing the world, you deserve the best digital marketing, branding, and PR team to help you achieve your goals and increase impact work. One that understands the importance of telling your brand story, how to say it, and where to direct it.</p>
+                            <h3 className='max-w-2xl mb-4 text-lg tracking-tight leading-none md:text-xl xl:text-2xl dark:text-white'>Mission Statement!</h3>
+                            <p class="max-w-2xl mb-6 slg:mb-8 md:text-base lg:text-lg">To contribute to client’s business growth through result oriented, innovative and creative strategies that will deliver the WOW factor.</p>
+                            <h3 className='max-w-2xl mb-4 text-lg tracking-tight leading-none md:text-xl xl:text-2xl'>Core Values</h3>
+                            <ul className='list-disc ml-4'>
+                                <li>Professionalism</li>
+                                <li>Integrity</li>
+                                <li>Passion driven</li>
+                                <li>Authenticity</li>
+                            </ul>
+                        </div>
+                        <div class="sm:mt-2 lg:mt-0 lg:col-span-5 lg:flex">
+                            <img src={aboutimage} alt="about-us-image" />
+                        </div> 
                     </div>
 
-                </div>
-                <div style={{display:'flex',marginTop:'50px'}}>
-                        <h1 className= 'heading' style={{fontSize: '60px', fontWeight: 100}}><span style={{color:'#CC2031',fontWeight: 500, fontSize:'60px'}}>Recreating</span> Stories and Experiences for manufacturing Industries</h1>
-                    </div>
-
-                <div className='vectorbuld2'>
-
-
-                    <div style={{marginTop:'10px',lineHeight: '55px'}}>
-                        <h3 className='heading' id='services'>SERVICES</h3>
-                        <p style={{fontWeight: 400 ,lineHeight: 1.2, fontSize: '20px'}}>
-                            We focus on deep customer insight to provide growth to our clients as we work on the principle of creativity, <br/> identity, innovation and inclusion and diversity.
-                        </p>
+                    <div className='vectorbuld2'>
+                        <div className='text-center mt-4 text-2xl md:text-xl xl:text-4xl'>
+                            <h1>Recreating Stories and Experiences for manufacturing Industries</h1>
+                        </div>
+                        <h1 class="max-w-2xl mt-12 text-2xl tracking-tight leading-none md:text-4xl xl:text-5xl dark:text-white uppercase text-center">Services</h1>
+                        <p className='max-w-2xl mb-6 mt-4 text-center slg:mb-8 md:text-base lg:text-lg dark:text-gray-400'>We focus on deep customer insight to provide growth to our clients as we work on the principle of creativity, identity, innovation and inclusion and diversity.</p>
                     </div>
                 </div>
             </div>
@@ -194,85 +189,67 @@ function Home(props) {
             </div>
             {/* testimony section */}
             <div className='testimony'>
-                <div style={{textAlign:"center"}}>
-                    <h2 className='heading' style={{fontSize: '50px',fontWeight: 500}}>TESTIMONIALS</h2>
-                    <p style={{fontSize: '20px',fontWeight: 400}}>Think we’re bluffing? See what people we’ve worked with think about us.</p>
+                <div className='testimony-header'>
+                    <h1 class="max-w-2xl mt-12 text-2xl tracking-tight leading-none md:text-4xl xl:text-5xl dark:text-white uppercase text-center">Testimonials</h1>
+                    <p className='max-w-2xl mb-6 mt-4 text-center slg:mb-8 md:text-base lg:text-lg dark:text-gray-400'>Think we’re bluffing? See what people we’ve worked with think about us.</p>
                 </div>
                 {/* testimony cards */}
-                <div className='testimony-cards'>
-                    <div className='card-grid-1'>
-                        <div className='grid-card'>
-                            <p style={{fontWeight: 400, fontSize: '18px', lineHeight: 1}}>
-                            Our brand has exponentially grown to explore social media avenues as it was operating offline. Choosing long term partnership with Kiri Marketing consultancy has broadened our relationship and sales growth experience. Her advice and expertise go a long way in enhancing brand needs & values.
-                            </p>
-                            <div className='card-footer'>
-                                <img width="50" height="50" src={profile1} alt="..."/>
-                                <p style={{fontSize: '16px', lineHeight: 1}}>
-                                Annet Obat &amp; Anita Lukelesia<br/>
-                                Co-Founders, Laette Closet
-                                </p>
+                {/* <div className='testimony-cardds '>
+                    <div class="grid gap-10 mb-12 grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2 ">
+                        <div class="max-w-md py-4 px-8 grid-cardd">
+                            <div>
+                            <p class="mt-2">Our brand has exponentially grown to explore social media avenues as it was operating offline. Choosing long term partnership with Kiri Marketing consultancy has broadened our relationship and sales growth experience. Her advice and expertise go a long way in enhancing brand needs & values.</p>
+                            </div>
+                            <div className='flex card-footer' style={{marginTop: "5px"}}>
+                                    <img width="50" height="50" src={profile1} alt="..."/>
+                                    <p style={{fontSize: '16px'}}>
+                                    Annet Obat &amp; Anita Lukelesia<br/>
+                                    Co-Founders, Laette Closet
+                                    </p>
                             </div>
                         </div>
-                        <div className='grid-card'>
-                            <p style={{fontWeight: 400, fontSize: '18px', lineHeight: 1}}>
-                            Kiri marketing Consultants is a perfect balance between professionalism and personality. They take their time to dig in and find out what the company needs to expand their market. Their strategies have helped us in aligning our company goals which has seen us grow and sign-up new clients.
-                            </p>
-                            <div className='card-footer'>
-                            <img width="50" height="50" src={profile2} alt="..."/>
-                                <p style={{fontSize: '16px', lineHeight: 1}}>
-                                Evelyne Wandanda<br/>
-                                Co-founder and managing partner, Innerblast Consultants
-                                </p>
+                        <div class="max-w-md py-4 px-8 grid-cardd">
+                            <div>
+                            <p class="mt-2">Kiri marketing Consultants is a perfect balance between professionalism and personality. They take their time to dig in and find out what the company needs to expand their market. Their strategies have helped us in aligning our company goals which has seen us grow and sign-up new clients.</p>
+                            </div>
+                            <div className='flex card-footer' style={{marginTop: "5px"}}>
+                                    <img width="50" height="50" src={profile2} alt="..."/>
+                                    <p style={{fontSize: '16px'}}>
+                                    Evelyne Wandanda<br/>
+                                    Co-founder and managing partner, Innerblast Consultants
+                                    </p>
                             </div>
                         </div>
-
-                        <div className='grid-card'>
-                            <p style={{fontWeight: 400, fontSize: '18px', lineHeight: 1}}>
-                            Talent Industry acknowledges the partnership offered by Kiri Marketing Consultants in the success of the 2022 East Africa Poetic Hour Battle on 20th May 2022. We would like to thank them for their outstanding service in event planning, marketing, branding and corporate ushering.
-                            </p>
-                            <div className='card-footer'>
-                            <img width="50" height="50" src={profile3} alt="..."/>
-                                <p style={{fontSize: '16px', lineHeight: 1}}> 
-                                Godfrey Emoja<br/>
-                                Managing Director, Talent Industry
-                                </p>
+                        <div class="max-w-md py-4 px-8 grid-cardd">
+                            <div>
+                            <p class="mt-2">Talent Industry acknowledges the partnership offered by Kiri Marketing Consultants in the success of the 2022 East Africa Poetic Hour Battle on 20th May 2022. We would like to thank them for their outstanding service in event planning, marketing, branding and corporate ushering.</p>
+                            </div>
+                            <div className='flex card-footer' style={{marginTop: "5px"}}>
+                                    <img width="50" height="50" src={profile3} alt="..."/>
+                                    <p style={{fontSize: '16px'}}>
+                                    Godfrey Emoja<br/>
+                                    Managing Director, Talent Industry
+                                    </p>
                             </div>
                         </div>
-                        <div className='grid-card'>
-                            <p style={{fontWeight: 400, fontSize: '18px', lineHeight: 1}}>Recreating Stories and Experiences for manufacturing Industries Recreating Stories and Experiences for manufacturing IndustriesRecreating Stories and Experiences for manufacturing Industries</p>
-                            <div className='card-footer'>
-                            <img width="50" height="50" src={profile4} alt="..."/>
-                                <p style={{fontSize: '16px', lineHeight: 1}}>
+                        <div class="max-w-md py-4 px-8 grid-cardd">
+                            <div>
+                            <p class="mt-2">Recreating Stories and Experiences for manufacturing Industries Recreating Stories and Experiences for manufacturing IndustriesRecreating Stories and Experiences for manufacturing Industries</p>
+                            </div>
+                            <div className='flex card-footer' style={{marginTop: "5px"}}>
+                                    <img width="50" height="50" src={profile4} alt="..."/>
+                                    <p style={{fontSize: '16px'}}>
                                     Bryce Zeibu<br/>
                                     CTA, Spify
-                                </p>
+                                    </p>
                             </div>
                         </div>
                     </div>
+                </div> */}
+                {/* percentage */}
 
-                
-                    {/* percentage */}
-                    <div className='grid-percentage'>
-                        <div className='grid-percentage-1'>
-                             <img src={person} alt='...'/><h1>37+</h1><br/>
-                            <p style={{fontSize: '24px'}}>Happy Clients</p>
-                        </div>
-                        <div className='grid-percentage-2'>
-                            <img src={network} alt='...'/><h1>98%</h1><br/>
-                            <p style={{fontSize: '24px'}}>Positive Feedback</p>
-                        </div>
-                        <div className='grid-percentage-3'>
-                            <img src={eye} alt='...'/><h1>835+</h1><br/>
-                            <p style={{fontSize: '24px'}}>Loyal Followers</p>
-                        </div>
-                        <div className='grid-percentage-4'>
-                            <img src={plane} alt='...'/><h1>50+</h1><br/>
-                            <p style={{fontSize: '24px'}}>Projects Delivered</p>
-                        </div>
-                    </div>
-
-                    {/* worked with */}
-                    <div className='worked-with'>
+                {/* worked with */}
+                <div className='worked-with'>
                         <h4 className='heading' style={{fontSize: '50px',fontWeight: 500}}>we’ve worked with</h4>
                         <div className='company-image'>
                                 <img src={image4} alt='...'/>
@@ -282,11 +259,10 @@ function Home(props) {
                                 <img src={image9} alt='...'/>
                                 <img src={image11} alt='...'/>
                         </div>
-                    </div>
                 </div>
             </div>
             {/* history section */}
-            <div className='history-section'>
+            {/* <div className='history-section'>
                 
                 <div className='grid-history'>
                     <div className='grid-history-1'>
@@ -304,9 +280,30 @@ function Home(props) {
                         </p>
                     </div>
                 </div>
+            </div> */}
+            <div className='history' id='history'>
+                <div className='history-about'>
+                    <div class="grid max-w-screen-xl px-4 py-8 mx-auto lg:gap-8 xl:gap-0 lg:py-16 lg:grid-cols-12">
+                        <div class="mb-8 sm:mt-0 lg:mt-0 lg:col-span-5 lg:flex">
+                            <img src={history} alt="about-us-image" />
+                        </div>
+                        <div class="ml-auto place-self-center lg:col-span-7">
+                            <h2 class="max-w-2xl mb-4 text-2xl font-extrabold tracking-tight leading-none md:text-4xl xl:text-5xl dark:text-white uppercase">Our history</h2>
+                            <p class="max-w-2xl mb-6 font-light lg:mb-8 md:text-base lg:text-lg dark:text-gray-400">Kiri Marketing Consultants is a Private Limited company founded in 2020 during the Covid 19 pandemic.<br/><br/>
+
+                            Our Founder has been a beneficiary of many missions driven projects especially ones that support women entrepreneurs for sustainable impact. She also has professional experience working for a Non-Profit organization. Her experiences and such initiatives have enabled her to harness her skills as a team leader and helped her gain a better perspective when it comes to mission-driven companies.<br/><br/>
+
+                            “The company was initially a Social Media Management company for small entrepreneurs and start-up companies and was birthed out of passion. With time and through more experience and realization of the gap in the market, there was a need to re-strategize and rebrand to full Digital Marketing, Branding and PR Agency for mission driven companies, social enterprises and nonprofit organizations.”<br/><br/>
+
+                            <em>Eileen, Founder/ CEO.</em>
+                        </p>
+                        </div>
+                        
+                    </div>
+                </div>
             </div>
             {/* recent article section */}
-            <div className='recent-articles' id='news'>
+            {/* <div className='recent-articles' id='news'>
                 <h4 className='heading' style={{fontSize: '50px',fontWeight: 500, marginTop: '4vh'}}>RECENT ARTICLES</h4>
                 <h2 className= 'heading' style={{fontSize: '40px', fontWeight: 50}}>Get Updated on the latest trends</h2>
                 <div className='grid-article'>
@@ -321,16 +318,46 @@ function Home(props) {
                         <p>The goal of merchandise planning is to meet customers’ needs by making products available at the right time, price and quantity.</p>
                     </div>
                 </div>
-            </div>
+            </div> */}
 
 
             {/* talk more section */}
             <div className='talk-more' id='contacts'>
-                <div className='grid-talk-more'>
-                    <div className='grid-talk-1'>
-                        <h1>Let’s talk about<br></br> building your <br></br>reputation</h1>
-                    </div>
-                    <div className='grid-talk-2'>
+                    <div className='grid-talk-more'>
+                        <div className='hidden sm:block grid-talk-1'>
+                            <h1>Let’s talk about building your reputation</h1>
+                        </div>
+                        {/* <div className='grid-talk-2'>
+                            <form class="px-8 pt-6 pb-8 mb-4 get-in-form">
+                                <h2 className='text-center font-bold '>Get in touch</h2>
+                                <div class="mb-4">
+                                <label class="block text-black text-sm font-normal mb-2" for="name">
+                                    Name
+                                </label>
+                                <input class="border border-black appearance-none w-full py-1 px-3 text-black leading-tight" id="name" type="text" />
+                                </div>
+                                <div class="mb-4">
+                                <label class="block text-black text-sm font-normal mb-2" for="email">
+                                    Email
+                                </label>
+                                <input class="border border-black appearance-none w-full py-1 px-3 text-black leading-tight" id="email" type="email" />
+                                </div>
+                                <div class="mb-4">
+                                <label class="block text-black text-sm font-normal mb-2" for="phone">
+                                    Phone
+                                </label>
+                                <input class="border border-black appearance-none w-full py-1 px-3 text-black leading-tight" id="phone" type="tel" />
+                                </div>
+                                <label for="message" class="block mb-2 text-sm font-normal">Message</label>
+                                <textarea id="message" rows="4" class="block p-2.5 w-full text-sm text-black border border-black focus:ring-blue-500 focus:border-blue-500"></textarea>
+                                <div class="flex items-center justify-between mt-4">
+                                <button class="bg-red-700 text-white font-light py-2 px-4 focus:outline-none focus:shadow-outline" type="button">
+                                    Sign In
+                                </button>
+                                </div>
+                            </form>
+                        </div> */}
+                        <div className='grid-talk-2'>
                         <form onSubmit={sendMail}>
                             <h3 style={{marginBottom:"20px",width:"242px",height:"44px",fontSize:'40px',fontWeight:'bolder'}}>Get in touch</h3>
                             <label>Name</label><br/>
@@ -344,8 +371,8 @@ function Home(props) {
                             {sendButton}
                         </form>
                     </div>
+                    </div>
                 </div>
-            </div>
 
             <Footer/>
         </>
