@@ -135,7 +135,7 @@ function Home(props) {
                         </div> 
                     </div>
 
-                    <div className='vectorbuld2'>
+                    <div className='vectorbuld2' id='services'>
                         <div className='text-center mt-4 text-2xl md:text-xl xl:text-4xl'>
                             <h1>Recreating Stories and Experiences for manufacturing Industries</h1>
                         </div>
@@ -194,7 +194,7 @@ function Home(props) {
                     <p className='max-w-2xl mb-6 mt-4 text-center slg:mb-8 md:text-base lg:text-lg dark:text-gray-400'>Think we’re bluffing? See what people we’ve worked with think about us.</p>
                 </div>
                 {/* testimony cards */}
-                {/* <div className='testimony-cardds '>
+                <div className='testimony-cardds'>
                     <div class="grid gap-10 mb-12 grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2 ">
                         <div class="max-w-md py-4 px-8 grid-cardd">
                             <div>
@@ -245,12 +245,30 @@ function Home(props) {
                             </div>
                         </div>
                     </div>
-                </div> */}
+                </div> 
                 {/* percentage */}
+                <div className='grid-percentages'>
+                    <div className='grid-percentage-1'>
+                         <img src={person} alt='...'/><h1>37+</h1><br/>
+                        <p>Happy Clients</p>
+                    </div>
+                    <div className='grid-percentage-2'>
+                        <img src={network} alt='...'/><h1>98%</h1><br/>
+                        <p>Positive Feedback</p>
+                    </div>
+                    <div className='grid-percentage-3'>
+                        <img src={eye} alt='...'/><h1>835+</h1><br/>
+                        <p>Loyal Followers</p>
+                    </div>
+                    <div className='grid-percentage-4'>
+                        <img src={plane} alt='...'/><h1>50+</h1><br/>
+                        <p>Projects Delivered</p>
+                    </div>
+                </div>
 
                 {/* worked with */}
                 <div className='worked-with'>
-                        <h4 className='heading' style={{fontSize: '50px',fontWeight: 500}}>we’ve worked with</h4>
+                        <h4 className='mt-12 text-xl tracking-tight leading-none md:text-3xl xl:text-5xl dark:text-white uppercase text-center'>we’ve worked with</h4>
                         <div className='company-image'>
                                 <img src={image4} alt='...'/>
                                 <img src={image5} alt='...'/>
@@ -262,25 +280,6 @@ function Home(props) {
                 </div>
             </div>
             {/* history section */}
-            {/* <div className='history-section'>
-                
-                <div className='grid-history'>
-                    <div className='grid-history-1'>
-                        <img src={history} alt='...'/>
-                    </div>
-                    <div className='grid-history-2'>
-                    <h1 className='heading' style={{fontSize: '50px',fontWeight: 500}}>Our history</h1>
-                        <p style={{fontSize: '18px',fontWeight: 400}}>Kiri Marketing Consultants is a Private Limited company founded in 2020 during the Covid 19 pandemic.<br/><br/>
-
-                            Our Founder has been a beneficiary of many missions driven projects especially ones that support women entrepreneurs for sustainable impact. She also has professional experience working for a Non-Profit organization. Her experiences and such initiatives have enabled her to harness her skills as a team leader and helped her gain a better perspective when it comes to mission-driven companies.<br/><br/>
-
-                            “The company was initially a Social Media Management company for small entrepreneurs and start-up companies and was birthed out of passion. With time and through more experience and realization of the gap in the market, there was a need to re-strategize and rebrand to full Digital Marketing, Branding and PR Agency for mission driven companies, social enterprises and nonprofit organizations.”<br/><br/>
-
-                            <em>Eileen, Founder/ CEO.</em>
-                        </p>
-                    </div>
-                </div>
-            </div> */}
             <div className='history' id='history'>
                 <div className='history-about'>
                     <div class="grid max-w-screen-xl px-4 py-8 mx-auto lg:gap-8 xl:gap-0 lg:py-16 lg:grid-cols-12">
@@ -303,7 +302,7 @@ function Home(props) {
                 </div>
             </div>
             {/* recent article section */}
-            {/* <div className='recent-articles' id='news'>
+            <div className='recent-articles' id='news'>
                 <h4 className='heading' style={{fontSize: '50px',fontWeight: 500, marginTop: '4vh'}}>RECENT ARTICLES</h4>
                 <h2 className= 'heading' style={{fontSize: '40px', fontWeight: 50}}>Get Updated on the latest trends</h2>
                 <div className='grid-article'>
@@ -318,7 +317,7 @@ function Home(props) {
                         <p>The goal of merchandise planning is to meet customers’ needs by making products available at the right time, price and quantity.</p>
                     </div>
                 </div>
-            </div> */}
+            </div>
 
 
             {/* talk more section */}
@@ -327,36 +326,6 @@ function Home(props) {
                         <div className='hidden sm:block grid-talk-1'>
                             <h1>Let’s talk about building your reputation</h1>
                         </div>
-                        {/* <div className='grid-talk-2'>
-                            <form class="px-8 pt-6 pb-8 mb-4 get-in-form">
-                                <h2 className='text-center font-bold '>Get in touch</h2>
-                                <div class="mb-4">
-                                <label class="block text-black text-sm font-normal mb-2" for="name">
-                                    Name
-                                </label>
-                                <input class="border border-black appearance-none w-full py-1 px-3 text-black leading-tight" id="name" type="text" />
-                                </div>
-                                <div class="mb-4">
-                                <label class="block text-black text-sm font-normal mb-2" for="email">
-                                    Email
-                                </label>
-                                <input class="border border-black appearance-none w-full py-1 px-3 text-black leading-tight" id="email" type="email" />
-                                </div>
-                                <div class="mb-4">
-                                <label class="block text-black text-sm font-normal mb-2" for="phone">
-                                    Phone
-                                </label>
-                                <input class="border border-black appearance-none w-full py-1 px-3 text-black leading-tight" id="phone" type="tel" />
-                                </div>
-                                <label for="message" class="block mb-2 text-sm font-normal">Message</label>
-                                <textarea id="message" rows="4" class="block p-2.5 w-full text-sm text-black border border-black focus:ring-blue-500 focus:border-blue-500"></textarea>
-                                <div class="flex items-center justify-between mt-4">
-                                <button class="bg-red-700 text-white font-light py-2 px-4 focus:outline-none focus:shadow-outline" type="button">
-                                    Sign In
-                                </button>
-                                </div>
-                            </form>
-                        </div> */}
                         <div className='grid-talk-2'>
                         <form onSubmit={sendMail}>
                             <h3 style={{marginBottom:"20px",width:"242px",height:"44px",fontSize:'40px',fontWeight:'bolder'}}>Get in touch</h3>
