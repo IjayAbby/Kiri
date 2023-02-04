@@ -724,7 +724,7 @@ footer .social-icons{
 
 
 /* media queries */
- @media screen and (max-width:1200px){
+ /* @media screen and (max-width:1200px){
   
   .about{
     padding-left: 50px;
@@ -740,7 +740,7 @@ footer .social-icons{
 .grid .grid-item{
   width: 100%;
 }
-/* Rectangle 2 and 3*/
+Rectangle 2 and 3
 .rectangle2{
   margin-top: 10px;
   margin-bottom: -350px;
@@ -753,7 +753,7 @@ footer .social-icons{
   grid-template-columns: repeat(2, 1fr);
 }
 
-/* picture section */
+picture section
 .pic-grid{
   display: grid;
   grid-template-columns: repeat(4,1fr);
@@ -776,7 +776,7 @@ footer .social-icons{
 .vectorbuld2{
  margin-top: 450px;
 }
-/* testimony */
+testimony
 .testimony{
   background: rgb(245, 238, 230);
   padding-top: 40px;
@@ -792,7 +792,7 @@ footer .social-icons{
   width: 400px;
   height: 200px;
 }
-/* worked-with */
+worked-with
 .worked-with h4{
   font-size: 20px;
 }
@@ -804,11 +804,11 @@ footer .social-icons{
 }
 .worked-with .company-image img{
   width: 10vw;
-  /* margin-top: 50px;
+  margin-top: 50px;
   display: flex;
-  justify-content: space-around; */
+  justify-content: space-around;
 }
-/* history section */
+history section
 .history-section{
   padding-top: 50px;
   padding-bottom: 30px;
@@ -836,7 +836,7 @@ footer .social-icons{
 }
 
 
-/* recent article */
+recent article
 .recent-articles{
   width: 100%;
   padding-bottom: 20px;
@@ -869,7 +869,7 @@ footer .social-icons{
 .grid-article-1 p{
   width:450px;
 }
-/* talk more section */
+talk more section
 .talk-more{
   background: rgb(245, 238, 230);
   padding-left: 50px;
@@ -916,7 +916,7 @@ footer .social-icons{
   background: #CC2031;
   color: #FFFAFA;
 }
-/* footer */
+footer
 
 .content{
   display: flex;
@@ -956,11 +956,11 @@ footer .social-icons{
 .last{
   font-size: 12px;
 }
-/*add blog page*/
+add blog page
 .add-blog-nav{
   padding-bottom: 10px;
 }
-/* blogPages css */
+blogPages css
 
 .header{
   padding-left: 125px;
@@ -980,7 +980,7 @@ footer .social-icons{
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
-  /* text-fill-color: transparent; */
+  text-fill-color: transparent;
 }
 .header button{
   margin-top: 10px;
@@ -1058,7 +1058,7 @@ footer .social-icons{
   padding-left:10%;
   padding-bottom: 50px;
 }
-}
+} */
 
 
 /* screen1000px */
@@ -2099,3 +2099,8 @@ footer .content ul li img{
     margin-left: 25%;
   }
 } */
+
+
+@media (max-width:1200px){
+
+}
