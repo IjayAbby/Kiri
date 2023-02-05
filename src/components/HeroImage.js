@@ -11,14 +11,14 @@ function HeroImage(props) {
                 <div className='Hero-image'>
                     <div className='hero-text'>
                         <div class="grid max-w-screen-xl px-4 py-8 mx-auto sm:mt-8 lg:gap-8 xl:gap-0 lg:py-16 lg:grid-cols-12">
-                            <div class="mr-auto place-self-center lg:col-span-7 content flex flex-col">
-                                <h1 class="max-w-2xl mb-4 text-4xl font-extrabold tracking-tight leading-none text-white md:text-5xl xl:text-6xl Enhancing">Enhancing Brands, Enhancing Lives</h1>
-                                <p class="max-w-2xl text-4xl mb-6 font-light text-white lg:mb-8 md:text-lg lg:text-xl  text">We focus on deep customer insights to provide growth.</p>
+                            <div class="mr-auto place-self-center lg:col-span-7 -mt-8 content flex flex-col">
+                                <h1 class="max-w-2xl text-3xl tracking-tight leading-none text-white md:text-5xl xl:text-6xl Enhancing">Enhancing Brands, Enhancing Lives</h1>
+                                <p class="max-w-2xl text-4xl font-light text-white lg:mb-8 md:text-lg lg:text-xl mb-4 text">We focus on deep customer insights to provide growth.</p>
                                 <button onClick={contacts}>
                                     Contact Us
                                 </button>
                             </div>
-                            <div class="hidden lg:mt-0 lg:col-span-5 lg:flex"></div>                
+                            {/* <div class="hidden lg:mt-0 lg:col-span-5 lg:flex"></div>                 */}
                         </div>
                         {/* <h1 className='Enhancing heading'>
                         Enhancing Brands,<br/>

@@ -158,8 +158,8 @@ button{
   background: url('./media/VectorBuld.png') no-repeat;
 }
 
-.grid-item {
-  /* font-size: 18px; */
+.recreate-span {
+  color: #CC2031;
 }
 
 /* Rectangle 2 and 3*/
@@ -172,20 +172,6 @@ button{
   flex-direction: column;
   align-items: center;
 }
-/* .vectorbuld2 h1{
-  margin-bottom: 40px;
-  font-size: 20px;
-} */
-/* .vectorbuld2 h3{
-  text-align: center;
-  margin-top: 20px;
-  font-size: 50px;
-  font-weight: 500;
-} */
-/* .vectorbuld2 p{
-  text-align: center;
-} */
-/* picture section */
 .pic-grid{
   display: grid;
   grid-template-columns: repeat(4,1fr);
@@ -263,6 +249,7 @@ button{
   align-items: center;
   flex-direction: column;
 }
+
 /* grid-card-1 */
 .card-grid-1{
   margin-top: 42px; 
@@ -291,34 +278,20 @@ button{
 
 /* percentage */
 .grid-percentages {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: repeat(2, auto);
-  /* gap: 10rem; */
-  padding: 20px;
-  width: 60%;
-  /* width: min(96%, 68.5rem); */
-  margin-inline: auto;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
 }
 .grid-percentages p{
-  margin-top: -20px;
-}
-.grid-percentage{
-  margin-top: 66px;
-  display: grid;
-  grid-template-columns: repeat(4,1fr);
-  column-gap: 50px;
-  margin-bottom: 20px;
-  width: 90vw;
+  margin-top: -30px;
 }
 .grid-percentages img{
-  /* margin:24 -8 -5px 30px; */
-  width: 32px;
-  height:32px;
+  width: 35px;
+  height:35px;
 }
 .grid-percentages h1{
-  margin-top: -60px;
-  margin-left: 50px;
+  margin-top: -70px;
+  margin-left: 35px;
   font-weight: 100;
   font-size: 50px;
 }
@@ -328,68 +301,19 @@ button{
   margin-top: -20px;
 }
 /* worked-with */
-.worked-with{
+.worked-with-heading{
+  display: flex;
+  align-items: center;
+  justify-content: center;
   text-align: center;
-}
-.worked-with h4{
-  font-weight: 500;
-  font-size: 26px;
-  line-height: 33px;
-  text-transform: uppercase;
-  color: #1E1E1E;
-  margin-top: 14vh;
-}
-.worked-with .company-image{
-  display: grid;
-  grid-template-columns: repeat(6, 1fr);
-  margin-inline: auto;
-  /* grid-template-rows: repeat(2, auto); */
-  /* margin-top: 16px;
-  margin-bottom: 50px; */
-  /* display: flex;
-  justify-content: space-around;
-  align-items: center; */
-}
-.worked-with .company-image img{
-  width: 10vw;
 }
 /* history section */
-.history-section{
-  padding: 30px 100px 30px 100px;
-  display: flex;
-  flex-direction: column;
-  color:white;
-  height: 500px;
+.history {
   background: #1E1E1E;
+  color: #FFFAFA;
 }
-.grid-history{
+.grid-history {
   background: url('./media/VectorHourGlass.png') no-repeat right top;
-  display: grid;
-  grid-template-columns: repeat(2,1fr);
-  max-width: 100%;
-}
-.grid-history-1 .reflection{
-  width: 380px;
-  height: 380px;
-  background: url('./media/reflectionImage.png');
-}
-.grid-history-1 img{
-  height: 380px;
-  width: 380px;
-  margin-left: 30px;
-  margin-top: 10vh;
-}
-.grid-history-2{
-  margin-top: 20px;
-}
-.history-section h1{
-  text-align: center;
-  margin-left: 50px;
-  font-weight: 500;
-  font-size: 26px;
-  line-height: 33px;
-  margin-bottom: 50px;
-  text-transform: uppercase;
 }
 /* recent article */
 .recent-articles{
@@ -722,9 +646,83 @@ footer .social-icons{
   justify-content: center;
 }
 
+@media screen and (max-width:1000px){
+  .pic-grid{
+    margin-left: 25%;
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    max-width: 100%;
+  }
+  .grid-item-1,.grid-item-2,.grid-item-3,.grid-item-4{
+    margin-top:20px;
+    width: 70%;
+    height: 300px;
+    background: url('./media/Public\ relations\ image.png');
+    background-size: cover;
+  }
+  .grid-item-2{
+    background:  url('./media/Brand\ management\ image.png');
+    background-size: cover;
+  }
+  .grid-item-3{
+    background:  url('./media/Digital\ Marketing\ Image.png');
+    background-size: cover;
+  }
+  .grid-item-4{
+    background:  url('./media/Training\ Image.png');
+    background-size: cover;
+  }
+}
+
+@media (max-width: 560px) {
+  .pic-grid{
+    margin-left: 10%;
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    max-width: 100%;
+    color:white;
+  }
+  
+  .grid-item-1,.grid-item-2,.grid-item-3,.grid-item-4{
+    margin-top:20px;
+    cursor:pointer;
+    width: 90%;
+    height: 250px;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 34.01%, rgba(0, 0, 0, 0.8) 76.04%),url('./media/Public\ relations\ image.png');
+    background-size: cover;
+  }
+  .grid-item-1:hover{
+    background:  linear-gradient(0deg, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),url('./media/Public\ relations\ image.png');
+    background-size: cover;
+  }
+  .grid-item-2{
+    background:  linear-gradient(180deg, rgba(0, 0, 0, 0) 34.01%, rgba(0, 0, 0, 0.8) 76.04%),url('./media/Brand\ management\ image.png');
+    background-size: cover;
+  }
+  .grid-item-2:hover{
+    background:  linear-gradient(0deg, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),url('./media/Brand\ management\ image.png');
+    background-size: cover;
+  }
+  .grid-item-3{
+    background-size: cover;
+    background:  linear-gradient(180deg, rgba(0, 0, 0, 0) 34.01%, rgba(0, 0, 0, 0.8) 76.04%),url('./media/Digital\ Marketing\ Image.png');
+  }
+  .grid-item-3:hover{
+    background-size: cover;
+    background:  linear-gradient(0deg, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),url('./media/Digital\ Marketing\ Image.png');
+  }
+  .grid-item-4{
+    background-size: cover;
+    background:  linear-gradient(180deg, rgba(0, 0, 0, 0) 34.01%, rgba(0, 0, 0, 0.8) 76.04%),url('./media/Training\ Image.png');
+  }
+  .grid-item-4:hover{
+    background-size: cover;
+   background:  linear-gradient(0deg, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),url('./media/Training\ Image.png');
+  }
+}
 
 /* media queries */
- /* @media screen and (max-width:1200px){
+/* @media screen and (max-width:1200px){
   
   .about{
     padding-left: 50px;
@@ -740,7 +738,6 @@ footer .social-icons{
 .grid .grid-item{
   width: 100%;
 }
-Rectangle 2 and 3
 .rectangle2{
   margin-top: 10px;
   margin-bottom: -350px;
@@ -776,7 +773,6 @@ picture section
 .vectorbuld2{
  margin-top: 450px;
 }
-testimony
 .testimony{
   background: rgb(245, 238, 230);
   padding-top: 40px;
@@ -808,7 +804,6 @@ worked-with
   display: flex;
   justify-content: space-around;
 }
-history section
 .history-section{
   padding-top: 50px;
   padding-bottom: 30px;
@@ -834,9 +829,6 @@ history section
   width: 300px;
   margin-left: 30px;
 }
-
-
-recent article
 .recent-articles{
   width: 100%;
   padding-bottom: 20px;
@@ -869,7 +861,6 @@ recent article
 .grid-article-1 p{
   width:450px;
 }
-talk more section
 .talk-more{
   background: rgb(245, 238, 230);
   padding-left: 50px;
@@ -956,12 +947,9 @@ footer .social-icons{
 .last{
   font-size: 12px;
 }
-add blog page
 .add-blog-nav{
   padding-bottom: 10px;
 }
-blogPages css
-
 .header{
   padding-left: 125px;
   height: 529px;
@@ -1058,11 +1046,9 @@ blogPages css
   padding-left:10%;
   padding-bottom: 50px;
 }
-} */
+}  */
 
-
-/* screen1000px */
-@media screen and (max-width:1000px){
+/* @media screen and (max-width:1000px){
   nav{
     background:  linear-gradient(90deg, rgba(172, 27, 41, 0.86) 23.32%, rgba(233, 175, 63, 0.81) 59.86%);
     width: 100%;
@@ -1110,7 +1096,6 @@ blogPages css
       border:none;
       font-size: 15px;
   }
- /* about section */
 .about{
   padding-left: 40px;
 }
@@ -1126,7 +1111,6 @@ blogPages css
   width: 100%;
   margin-bottom: -450px;
 }
-/* Rectangle 2 and 3*/
 .rectangle2{
   display:none;
   margin-top: 40px;
@@ -1154,7 +1138,6 @@ blogPages css
   text-align: center;
   width: 70vw;
 }
-/* picture section */
 .pic-grid{
   margin-left: 25%;
   display: grid;
@@ -1183,19 +1166,15 @@ blogPages css
 .vectorbuld2{
  margin-top: 450px;
 }
-/* testimony */
 .testimony{
   background: rgb(245, 238, 230);
   background: url('./media/vectorQuote1.png')no-repeat left top;
 }
-/* grid-card-1 */
 .card-grid-1{
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-
-/* card */
 .grid-card{
   padding-bottom: 10px;
   margin-top: 20px;
@@ -1203,14 +1182,12 @@ blogPages css
   height: 200px;
   background: linear-gradient(90deg, rgba(204, 32, 49, 0.2) 31.98%, rgba(233, 175, 63, 0.2) 100%);
 }
-/* worked-with */
 .worked-with h4{
   font-size: 20px;
 }
 .worked-with .company-image img{
   width: 10vw;
 }
-/* history section */
 .history-section{
   padding-top: 50px;
   padding-bottom: 30px;
@@ -1246,7 +1223,6 @@ blogPages css
   margin-bottom: 8px;
   text-transform: uppercase;
 }
-/* recent article */
 .recent-articles{
   padding: 0 0 40px 0;
   color:white;
@@ -1275,7 +1251,6 @@ blogPages css
   width:100%;
   height: 60%;
 }
-/* talk more section */
 .talk-more{
   background: rgb(245, 238, 230);
   padding-left: 50px;
@@ -1322,8 +1297,6 @@ blogPages css
   background: #CC2031;
   color: #FFFAFA;
 }
-/* footer */
-
 .content{
   display: flex;
   justify-content: space-around;
@@ -1362,12 +1335,9 @@ footer .social-icons{
 .last{
   font-size: 12px;
 }
-/*add blog page*/
 .add-blog-nav{
   padding-bottom: 10px;
 }
-/* blogPages css */
-
 .header{
   padding-left: 10%;
   height: 529px;
@@ -1454,17 +1424,15 @@ footer .social-icons{
 .grid-blogs .extra h3{
   margin-top: 2px;
 }
-
-/* article page css */
 .more-article a{
   padding-top: 4%;
   font-size: 15px;
   line-height: 10px;
 }
-}
+} */
 
 
-@media screen and (max-width:700px){
+/* @media screen and (max-width:700px){
   .about{
     padding-left: 15px;
   }
@@ -1490,8 +1458,8 @@ footer .social-icons{
   display: flex;
   padding-left: 0;
  }
-}
-@media screen and (max-width:560px){
+} */
+/* @media screen and (max-width:560px){
 .nav-menu{
   padding: min(10vh,2rem) 2em;
   z-index: 1;
@@ -1528,7 +1496,6 @@ footer .social-icons{
       border:none;
       font-size: 15px;
   }
- /* about section */
 .about{
   padding-left: 15px;
   height: fit-content;
@@ -1553,8 +1520,6 @@ footer .social-icons{
   margin-top: -110px;
   font-size: 15px;
 }
-
-/* picture section */
 .pic-grid{
   margin-left: 10%;
   display: grid;
@@ -1602,15 +1567,11 @@ footer .social-icons{
 .vectorbuld2{
   margin-top: 450px;
 }
-/* testimony */
-/* card */
 .grid-card{
  height: max-content;
  width: 70vw;
  padding-bottom: 20px;
 }
-
-/* percentage */
 .grid-percentage{
   width: 80vw;
   display: grid;
@@ -1618,8 +1579,6 @@ footer .social-icons{
   column-gap: 20px;
   row-gap: 50px;
 }
-
-/* worked-with */
 .worked-with{
   display: flex;
   flex-direction: column;
@@ -1633,12 +1592,6 @@ footer .social-icons{
   width: 25vw;
  justify-content: space-around;
 }
-/* .company-image img{
-  width: 40px;
-  padding-right: 5px;
-  height: 40px;
-} */
-/* history section */
 .history-section{
   text-align: center;
   align-content: center;
@@ -1674,7 +1627,6 @@ footer .social-icons{
   margin-bottom: 8px;
   text-transform: uppercase;
 }
-/* recent article */
 .recent-articles{
   width: 100%;
   padding: 0 0 40px 0;
@@ -1702,7 +1654,6 @@ footer .social-icons{
 .grid-article-1 p{
   width: 100%;
 }
-/* talk more section */
 .talk-more{
   background: rgb(245, 238, 230);
   padding-right: 100px;
@@ -1750,7 +1701,6 @@ footer .social-icons{
   background: #CC2031;
   color: #FFFAFA;
 }
-/* footer */
 footer{
   padding: 20px 10px 0 20px;
 }
@@ -1792,12 +1742,9 @@ footer .social-icons{
 .last{
   font-size: 12px;
 }
-/*add blog page*/
 .add-blog-nav{
   padding-bottom: 10px;
 }
-/* blogPages css */
-
 .header{
   padding-left: 10%;
   height: 529px;
@@ -1903,7 +1850,6 @@ footer .social-icons{
   width: 80px;
   margin-bottom: 20px;
 }
-/* blogPages css */
 .header{
   padding-left: 10px;
   height: 450px;
@@ -1939,9 +1885,6 @@ footer .social-icons{
   width: 260px;
   height: 181px;
 }
-/* article page css */
-/* blog article page css */
-
 .blog-article-header{
     margin-top: -50px;
     height: 300px;
@@ -1999,9 +1942,9 @@ footer .social-icons{
   font-size: 15px;
   line-height: 10px;
 }
-}
+} */
 
-@media screen and (max-width:430px) {
+/* @media screen and (max-width:430px) {
   
 .talk-more{
   margin-bottom: 10px;
@@ -2021,9 +1964,9 @@ footer .content ul li a, footer .content ul li p, footer .content ul li h3{
 footer .content ul li img{
   width: 20px;
 }
-}
+} */
 
-@media screen and (max-width:350px) {
+/* @media screen and (max-width:350px) {
   .recent-articles .grid-article{
     margin-left: -10px;
   }
@@ -2042,8 +1985,8 @@ footer .content ul li img{
   footer .content ul li img{
     width: 20px;
   }
-}
-@media screen and (max-width:300px) {
+} */
+/* @media screen and (max-width:300px) {
   
   .more-article .card-blogs{
     width: 50%;
@@ -2067,20 +2010,20 @@ footer .content ul li img{
   footer .content ul li img{
     width: 20px;
   }
-}
-@media screen and (max-width:280px) {
+} */
+/* @media screen and (max-width:280px) {
   .company-image{
     width: 200px;
   }
 
-}
+} */
 
-@supports(backdrop-filter: blur(2rem)){
+/* @supports(backdrop-filter: blur(2rem)){
   .nav-menu{
     background: hsl(0 0% 100% / 0.1);
     backdrop-filter: blur(2rem);
   }
-}
+} */
 
 /* 
 @media (max-width: 768px) {
@@ -2100,7 +2043,8 @@ footer .content ul li img{
   }
 } */
 
-
-@media (max-width:1200px){
-
+@media (max-width:368px){
+  .Hero-image .hero-text .Enhancing {
+    font-size: 50px;
+  }
 }

@@ -112,7 +112,6 @@ function Home(props) {
     return (
         <>
             <HeroImage/>
-            {/* about section */}
             <div className='about' id='about'>
                 <div className='grid-about'>
                     <div class="grid max-w-screen-xl px-4 py-8 mx-auto lg:gap-8 xl:gap-0 lg:py-16 lg:grid-cols-12">
@@ -136,15 +135,14 @@ function Home(props) {
                     </div>
 
                     <div className='vectorbuld2' id='services'>
-                        <div className='text-center mt-4 text-2xl md:text-xl xl:text-4xl'>
-                            <h1>Recreating Stories and Experiences for manufacturing Industries</h1>
+                        <div className='text-center mt-4 text-3xl md:text-5xl xl:text-7xl'>
+                            <h1><span className='text-3xl md:text-5xl xl:text-7xl recreate-span'>Recreating</span> Stories and Experiences for manufacturing Industries</h1>
                         </div>
                         <h1 class="max-w-2xl mt-12 text-2xl tracking-tight leading-none md:text-4xl xl:text-5xl dark:text-white uppercase text-center">Services</h1>
                         <p className='max-w-2xl mb-6 mt-4 text-center slg:mb-8 md:text-base lg:text-lg dark:text-gray-400'>We focus on deep customer insight to provide growth to our clients as we work on the principle of creativity, identity, innovation and inclusion and diversity.</p>
                     </div>
                 </div>
             </div>
-            {/* picture section */}
             <div className='pic-grid'>
                 <div className='grid-item-1' onClick={showPublic} onMouseOver={showPublic} onMouseLeave={dontShowPublic}>
                     <h3 className='public-h3 heading'>Public Relations</h3>
@@ -187,13 +185,11 @@ function Home(props) {
                     </div>
                 </div>
             </div>
-            {/* testimony section */}
             <div className='testimony'>
                 <div className='testimony-header'>
                     <h1 class="max-w-2xl mt-12 text-2xl tracking-tight leading-none md:text-4xl xl:text-5xl dark:text-white uppercase text-center">Testimonials</h1>
                     <p className='max-w-2xl mb-6 mt-4 text-center slg:mb-8 md:text-base lg:text-lg dark:text-gray-400'>Think we’re bluffing? See what people we’ve worked with think about us.</p>
                 </div>
-                {/* testimony cards */}
                 <div className='testimony-cardds'>
                     <div class="grid gap-10 mb-12 grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2 ">
                         <div class="max-w-md py-4 px-8 grid-cardd">
@@ -245,9 +241,9 @@ function Home(props) {
                             </div>
                         </div>
                     </div>
-                </div> 
-                {/* percentage */}
-                <div className='grid-percentages'>
+                </div>
+                <div className='mt-4 grid-percentages'>
+                    <div className='grid ml-4 gap-10 mb-12 grid-cols-2 sm:grid-cols-4 lg:grid-cols-4 xl:grid-cols-4'>
                     <div className='grid-percentage-1'>
                          <img src={person} alt='...'/><h1>37+</h1><br/>
                         <p>Happy Clients</p>
@@ -264,31 +260,31 @@ function Home(props) {
                         <img src={plane} alt='...'/><h1>50+</h1><br/>
                         <p>Projects Delivered</p>
                     </div>
+                    </div>
                 </div>
-
-                {/* worked with */}
                 <div className='worked-with'>
-                        <h4 className='mt-12 text-xl tracking-tight leading-none md:text-3xl xl:text-5xl dark:text-white uppercase text-center'>we’ve worked with</h4>
-                        <div className='company-image'>
-                                <img src={image4} alt='...'/>
-                                <img src={image5} alt='...'/>
-                                <img src={image7} alt='...'/>
-                                <img src={image8} alt='...'/>
-                                <img src={image9} alt='...'/>
-                                <img src={image11} alt='...'/>
+                    <div className="worked-with-heading">
+                        <h1 class="max-w-2xl mt-4 mb-8 text-2xl tracking-tight leading-none md:text-4xl xl:text-5xl dark:text-white uppercase text-center">we’ve worked with</h1>
+                    </div>
+                        <div className='grid ml-4 gap-10 mb-12 grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 xl:grid-cols-6 company-image'>
+                            <img src={image4} alt='...'/>
+                            <img src={image5} alt='...'/>
+                            <img src={image7} alt='...'/>
+                            <img src={image8} alt='...'/>
+                            <img src={image9} alt='...'/>
+                            <img src={image11} alt='...'/>
                         </div>
                 </div>
             </div>
-            {/* history section */}
             <div className='history' id='history'>
                 <div className='history-about'>
-                    <div class="grid max-w-screen-xl px-4 py-8 mx-auto lg:gap-8 xl:gap-0 lg:py-16 lg:grid-cols-12">
+                    <div class="grid max-w-screen-xl px-4 py-8 mx-auto lg:gap-8 xl:gap-0 lg:py-16 lg:grid-cols-12 grid-history">
                         <div class="mb-8 sm:mt-0 lg:mt-0 lg:col-span-5 lg:flex">
                             <img src={history} alt="about-us-image" />
                         </div>
                         <div class="ml-auto place-self-center lg:col-span-7">
-                            <h2 class="max-w-2xl mb-4 text-2xl font-extrabold tracking-tight leading-none md:text-4xl xl:text-5xl dark:text-white uppercase">Our history</h2>
-                            <p class="max-w-2xl mb-6 font-light lg:mb-8 md:text-base lg:text-lg dark:text-gray-400">Kiri Marketing Consultants is a Private Limited company founded in 2020 during the Covid 19 pandemic.<br/><br/>
+                            <h2 class="max-w-2xl text-white mb-4 text-2xl font-extrabold tracking-tight leading-none md:text-4xl xl:text-5xl dark:text-white uppercase">Our history</h2>
+                            <p class="max-w-2xl mb-6 font-light text-white lg:mb-8 md:text-base lg:text-lg dark:text-gray-400">Kiri Marketing Consultants is a Private Limited company founded in 2020 during the Covid 19 pandemic.<br/><br/>
 
                             Our Founder has been a beneficiary of many missions driven projects especially ones that support women entrepreneurs for sustainable impact. She also has professional experience working for a Non-Profit organization. Her experiences and such initiatives have enabled her to harness her skills as a team leader and helped her gain a better perspective when it comes to mission-driven companies.<br/><br/>
 
@@ -301,8 +297,7 @@ function Home(props) {
                     </div>
                 </div>
             </div>
-            {/* recent article section */}
-            <div className='recent-articles' id='news'>
+            {/* <div className='recent-articles' id='news'>
                 <h4 className='heading' style={{fontSize: '50px',fontWeight: 500, marginTop: '4vh'}}>RECENT ARTICLES</h4>
                 <h2 className= 'heading' style={{fontSize: '40px', fontWeight: 50}}>Get Updated on the latest trends</h2>
                 <div className='grid-article'>
@@ -317,11 +312,8 @@ function Home(props) {
                         <p>The goal of merchandise planning is to meet customers’ needs by making products available at the right time, price and quantity.</p>
                     </div>
                 </div>
-            </div>
-
-
-            {/* talk more section */}
-            <div className='talk-more' id='contacts'>
+            </div> */}
+            {/* <div className='talk-more' id='contacts'>
                     <div className='grid-talk-more'>
                         <div className='hidden sm:block grid-talk-1'>
                             <h1>Let’s talk about building your reputation</h1>
@@ -341,9 +333,9 @@ function Home(props) {
                         </form>
                     </div>
                     </div>
-                </div>
+            </div> */}
 
-            <Footer/>
+            {/* <Footer/> */}
         </>
     );
 }
