@@ -297,25 +297,29 @@ function Home(props) {
                     </div>
                 </div>
             </div>
-            {/* <div className='recent-articles' id='news'>
-                <h4 className='heading' style={{fontSize: '50px',fontWeight: 500, marginTop: '4vh'}}>RECENT ARTICLES</h4>
-                <h2 className= 'heading' style={{fontSize: '40px', fontWeight: 50}}>Get Updated on the latest trends</h2>
-                <div className='grid-article'>
-                    <div className='grid-article-1'>
+            <div className='recent-articles' id='news'>
+                <div className="mb-4 articles-headings">
+                    <h1 class="max-w-2xl mt-4 text-2xl tracking-tight leading-none md:text-4xl xl:text-5xl dark:text-white uppercase text-center">recent articles</h1>
+                    <h2 className='max-w-2xl text-4xl tracking-tight leading-none md:text-5xl dark:text-white'>Get Updated on the latest trends</h2>
+                </div>
+                <div className="grid-article">
+                    <div className='grid lg:ml-20 gap-10 grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2'>
+                    <div className='grid-articlet'>
                         <img src={articleImage1} alt='..'/>
-                        <h3>Marketing Made Easy</h3>
-                        <p>Some concept examples to help you understand how marketing works.</p>
+                        <h3 className='max-w-2xl mt-4 text-2xl tracking-tight leading-none md:text-2xl xl:text-3xl dark:text-white'>Marketing Made Easy</h3>
+                        <p class="max-w-2xl mb-6 slg:mb-8 md:text-base lg:text-lg">Some concept examples to help you understand how marketing <br /> works.</p>
                     </div>
-                    <div className='grid-article-1'>
+                    <div className='grid-articlet'>
                         <img src={articleImage2} alt='..'/>
-                        <h3>Importance of Merchandise Planning</h3>
-                        <p>The goal of merchandise planning is to meet customers’ needs by making products available at the right time, price and quantity.</p>
+                        <h3 className='max-w-2xl mt-4 text-2xl tracking-tight leading-none md:text-2xl xl:text-3xl dark:text-white'>Importance of Merchandise Planning</h3>
+                        <p class="max-w-2xl mb-6 slg:mb-8 md:text-base lg:text-lg">The goal of merchandise planning is to meet customers’ needs by <br/> making products available at the right time, price and quantity.</p>
+                    </div>
                     </div>
                 </div>
-            </div> */}
-            {/* <div className='talk-more' id='contacts'>
+            </div>
+            <div className='talk-more' id='contacts'>
                     <div className='grid-talk-more'>
-                        <div className='hidden sm:block grid-talk-1'>
+                        <div className='hidden md:block grid-talk-1'>
                             <h1>Let’s talk about building your reputation</h1>
                         </div>
                         <div className='grid-talk-2'>
@@ -333,9 +337,9 @@ function Home(props) {
                         </form>
                     </div>
                     </div>
-            </div> */}
+            </div>
 
-            {/* <Footer/> */}
+            <Footer/>
         </>
     );
 }

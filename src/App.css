@@ -317,45 +317,30 @@ button{
 }
 /* recent article */
 .recent-articles{
+  color:white;
+  background: linear-gradient(90deg, #CC2031 31.98%, #E9AF3F 100%);
+  height: 100%;
+  /* margin-bottom: -50px; */
+}
+.articles-headings {
   display: flex;
   flex-direction: column;
   align-items: center;
-  color:white;
-  height: 550px;
-  background: linear-gradient(90deg, #CC2031 31.98%, #E9AF3F 100%);
 }
-.recent-articles h4{
+/* .recent-articles h4{
   text-align: center;
   font-weight: 500;
   font-size: 20px;
   line-height: 33px;
   text-transform: uppercase;
-}
-.recent-articles h2{
+} */
+/* .recent-articles h2{
   font-weight: lighter;
   font-size: 40px;
   line-height: 55px;
   text-align: center;
   margin-bottom: 20px;
-  margin-top: 20px;
-}
-.grid-article{
-  display: grid;
-  grid-template-columns: repeat(2, 700px);
-  max-width: 100%;
-}
-.grid-article-1 h3{
-  font-weight: 400;
-  font-size: 28px;
-  line-height: 44px;
-  margin-bottom: 5px;
-}
-.grid-article-1 img{
-  margin-top: 20px;
-  width:80%;
-  height: 60%;
-}
-
+} */
 /* talk more section */
 .talk-more{
   background: rgb(245, 238, 230);
@@ -647,6 +632,31 @@ footer .social-icons{
 }
 
 @media screen and (max-width:1000px){
+  nav{
+    background:  linear-gradient(90deg, rgba(172, 27, 41, 0.86) 23.32%, rgba(233, 175, 63, 0.81) 59.86%);
+    width: 100%;
+    top:0;
+    padding-top: 60px;
+    height: 30px;
+  }
+  
+ .logo{
+  position: fixed;
+  top: 50px;
+  left: 45px;
+ }
+  nav ul a{
+    display: none;
+  }
+  nav .ham{
+    display: block;
+    width: 40px;
+    height: 40px;
+    position: fixed;
+    top: 35px;
+    right: 150px;
+    cursor: pointer;
+  }
   .pic-grid{
     margin-left: 25%;
     display: grid;
@@ -672,9 +682,26 @@ footer .social-icons{
     background:  url('./media/Training\ Image.png');
     background-size: cover;
   }
+  .recent-articles{
+  padding: 0 0 40px 0;
+  color:white;
+  height: 100%;
+  background: linear-gradient(90deg, #CC2031 31.98%, #E9AF3F 100%);
+  }
 }
 
 @media (max-width: 560px) {
+  .nav-menu{
+    padding: min(10vh,2rem) 2em;
+    z-index: 1;
+    transition: ease-out 2s;
+  }
+   .nav-menu img{
+    position: relative;
+    margin-left: 85%;
+    width: 50px; 
+    height: 50px;
+  } 
   .pic-grid{
     margin-left: 10%;
     display: grid;
@@ -722,332 +749,6 @@ footer .social-icons{
 }
 
 /* media queries */
-/* @media screen and (max-width:1200px){
-  
-  .about{
-    padding-left: 50px;
-  }
-.grid{
-  background: url('./media/VectorBuld.png');
-  background-repeat: no-repeat;
-  display: grid;
-  grid-template-columns: repeat(2,1fr);
-  max-width: 100%;
-  margin-bottom: -350px;
-}
-.grid .grid-item{
-  width: 100%;
-}
-.rectangle2{
-  margin-top: 10px;
-  margin-bottom: -350px;
-}
-.vectorbuld2 h1{
-  font-size: 20px;
-}
-.grid-percentages {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-}
-
-picture section
-.pic-grid{
-  display: grid;
-  grid-template-columns: repeat(4,1fr);
-  max-width: 100%;
-}
-.grid-item-1,.grid-item-2,.grid-item-3,.grid-item-4{
-  width: 100%;
-  height: 260px;
-  background: url('./media/Public\ relations\ image.png');
-}
-.grid-item-2{
-  background:  url('./media/Brand\ management\ image.png');
-}
-.grid-item-3{
-  background:  url('./media/Digital\ Marketing\ Image.png');
-}
-.grid-item-4{
- background:  url('./media/Training\ Image.png');
-}
-.vectorbuld2{
- margin-top: 450px;
-}
-.testimony{
-  background: rgb(245, 238, 230);
-  padding-top: 40px;
-  background: url('./media/vectorQuote1.png');
-  background-repeat: no-repeat;
-  background-position: left top;
-}
-.testimony-cards{
-  display: flex;
-  align-items: center;
-}
-.grid-card{
-  width: 400px;
-  height: 200px;
-}
-worked-with
-.worked-with h4{
-  font-size: 20px;
-}
-.worked-with .company-image{
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  margin-inline: auto;
-  gap: 10%;
-}
-.worked-with .company-image img{
-  width: 10vw;
-  margin-top: 50px;
-  display: flex;
-  justify-content: space-around;
-}
-.history-section{
-  padding-top: 50px;
-  padding-bottom: 30px;
-  color:white;
-  height: 450px;
-  background: #1E1E1E;
-}
-.grid-history{
-  margin-left: 5%;
-  background: url('./media/VectorHourGlass.png') no-repeat right top;
-  display: grid;
-  grid-template-columns: repeat(2,1fr);
-  max-width: 100%;
-}
-.grid-history-1 .reflection{
-  width: 300px;
-  height: 300px;
-  background: url('./media/reflectionImage.png');
-}
-.grid-history-1 img{
-  margin-top: -360px;
-  height: 300px;
-  width: 300px;
-  margin-left: 30px;
-}
-.recent-articles{
-  width: 100%;
-  padding-bottom: 20px;
-  color:white;
-  height: max-content;
-  background: linear-gradient(90deg, #CC2031 31.98%, #E9AF3F 100%);
-}
-.recent-articles h4{
-  font-size: 20px;
-}
-.recent-articles h2{
-  font-size: 25px;
-}
-.grid-article{
-  padding-left: 10%;
-  display: grid;
-  grid-template-columns: repeat(2,1fr);
-}
-.grid-article-1 h3{
-  font-weight: 400;
-  font-size: 28px;
-  line-height: 44px;
-  margin-bottom: 5px;
-}
-.grid-article-1 img{
-  margin-top: 50px;
-  width:80%;
-  height: 60%;
-}
-.grid-article-1 p{
-  width:450px;
-}
-.talk-more{
-  background: rgb(245, 238, 230);
-  padding-left: 50px;
-  padding-right: 100px;
-  padding-top: 30px;
-  padding-bottom: 40px;
-  height: 500px;
-}
-.grid-talk-more{
-  grid-template-columns: repeat(2,1fr);
-}
-.grid-talk-1 h1{
-  font-size: 30px;
-}
-.grid-talk-2{
-  margin-top: 10px;
-  margin-left: 10px;
-  background: url('./media/VectorChat2.png') no-repeat right;
-  background-size: 400px;
-}
-.grid-talk-2 form{
-  padding-top: 26px;
-  padding-left: 30px;
-  width: 340px;
-  height: 490px;
-  background: rgba(233, 175, 63, 0.2);
-}
-.grid-talk-2 form input,.grid-talk-2 form textarea,.add-blog-form input,.add-blog-form textarea{
-  padding-left: 10px;
-  background: rgba(233, 175, 63, 0.2);
-  border: 0.5px solid #000000;
-  width: 300px;
-  height: 30px;
-  font-size: large;
-}
-.grid-talk-2 form textarea,.add-blog-form textarea{
-  padding-top: 5px;
-  height: 100px;
-}
-.grid-talk-2 form button, .add-blog-form button{
-  border: none;
-  width: 131px;
-  height: 50px;
-  background: #CC2031;
-  color: #FFFAFA;
-}
-footer
-
-.content{
-  display: flex;
-  justify-content: space-around;
-}
-.content p{
-  font-size: small;
-}
-footer h2{
-  font-weight: bolder;
-  font-size: 20px;
-  line-height: 44px;
-}
-footer  ul{
-  margin-top: 20px;
-}
-footer ul li{
-  font-size: small;
-}
-footer ul li img{
-  width: 22px;
-  height:20px;
-}
-footer ul li a{
-  text-decoration: none;
-  color: white;
-}
-footer .social-icons{
-  margin-top: 50px;
-  display: flex;
-  justify-content: center;
-}
-.social-icons img{
-  width: 22px;
-  height:20px;
-}
-.last{
-  font-size: 12px;
-}
-.add-blog-nav{
-  padding-bottom: 10px;
-}
-.header{
-  padding-left: 125px;
-  height: 529px;
-  left: -1px;
-  top: 105px;
-  background:  url('./media/Rectangle\ 56.png');
-}
-.header h1{
-  width: 594px;
-  height: 137px;
-  padding-top: 166px;
-  font-weight: 400;
-  font-size: 72px;
-  line-height: 66px;
-  background: linear-gradient(90deg, #CC2031 31.98%, #E9AF3F 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-  text-fill-color: transparent;
-}
-.header button{
-  margin-top: 10px;
-  color: #FFFAFA;
-  width: 135px;
-  height: 50px;
-  background: #CC2031;
-  border: none;
-}
-.blogs{
-  padding-left:5%;
-  padding-right:5%;
-  padding-bottom: 50px;
-}
-.grid-blogs{
- display:grid;
- grid-template-columns: repeat(3,1fr);
- 
-}
-.grid-blogs .card-blogs{
-  margin-top: 50px;
-  padding-left: 30px;
-  padding-right: 30px;
-  padding-top: 20px;
-  width: 300px;
-  height: 412px;
-  background: #FDF7EC;
-  border: 1px solid #E9AF3F;
-}
-.card-blogs h3{
-  font-weight: 500;
-  margin-bottom: 10px;
-  font-size: 29.534px;
-  line-height: 27px;
-}
-.card-blogs img{
-  width: 300px;
-  height: 181px;
-}
-.card-blogs button{
-  color: #1E1E1E;
-  margin-top: 20px;
-  width: 100px;
-  height: 50px;
-  background: #FDF7EC;
-  border: 1px solid #E9AF3F;
-}
-.card-blogs button:hover{
-  color:white;
-  background: #CC2031;
-}
-.card-blogs a{
-  padding-top:20px;
-  text-decoration: none;
-}
-.card-blogs a:hover{
-  color:#CC2031;
-}
-.grid-blogs .extra{
-  margin-top: 50px;
-  padding-left: 30px;
-  padding-right: 30px;
-  padding-top: 20px;
-  width: 300px;
-  height: 412px;
-}
-.grid-blogs .extra h3{
-  margin-top: 2px;
-}
-.grid-blogs{
-  display:grid;
-  grid-template-columns: repeat(2,1fr);
- }
- .blogs{
-  padding-left:10%;
-  padding-bottom: 50px;
-}
-}  */
-
 /* @media screen and (max-width:1000px){
   nav{
     background:  linear-gradient(90deg, rgba(172, 27, 41, 0.86) 23.32%, rgba(233, 175, 63, 0.81) 59.86%);
