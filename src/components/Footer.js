@@ -81,17 +81,17 @@ function Footer(props) {
                 </ul>
             </div>
             </div>
-            <div class="flex mt-4 space-x-6 sm:justify-center sm:mt-0 social-links">
-                <a href="https://www.facebook.com/kirimarketingconsultants" target="_blank" class="text-white hover:text-gray-900 dark:hover:text-white" >
+            <div class="flex justify-center mt-4 space-x-6 sm:mt-0 social-links">
+                <a href="https://www.facebook.com/kirimarketingconsultants" target="_blank" >
                     <i class="fa fa-brands fa-facebook-f"></i>
                 </a>
-                <a href='https://www.twitter.com/kiriconsultants' target='_blank' class="text-white hover:text-gray-900 dark:hover:text-white">
+                <a href='https://www.twitter.com/kiriconsultants' target='_blank'>
                     <i class="fa fa-brands fa-twitter"></i>
                 </a>
-                <a href='https://www.linkedin.com/company/kiri-consultants/' target='_blank' class="text-white hover:text-gray-900 dark:hover:text-white">
+                <a href='https://www.linkedin.com/company/kiri-consultants/' target='_blank'>
                     <i class="fa fa-brands fa-linkedin-in"></i>
                 </a>
-                <a href='https://www.instagram.com/kiriconsultants/' target='_blank' class="text-white hover:text-gray-900 dark:hover:text-white">
+                <a href='https://www.instagram.com/kiriconsultants/' target='_blank'>
                     <i class="fa fa-brands fa-instagram"></i>
                 </a>
             </div>

@@ -113,7 +113,7 @@ function Home(props) {
         <>
             <HeroImage/>
             <div className='about' id='about'>
-                <div className='grid-about'>
+                <div className='-mt-16 grid-about'>
                     <div class="grid max-w-screen-xl px-4 py-8 mx-auto lg:gap-8 xl:gap-0 lg:py-16 lg:grid-cols-12">
                         <div class="mr-auto place-self-center lg:col-span-7">
                             <h2 class="max-w-2xl mb-4 text-2xl tracking-tight leading-none md:text-4xl xl:text-5xl dark:text-white uppercase">About Us</h2>
@@ -129,7 +129,7 @@ function Home(props) {
                                 <li>Authenticity</li>
                             </ul>
                         </div>
-                        <div class="sm:mt-2 lg:mt-0 lg:col-span-5 lg:flex">
+                        <div class="hidden md:block sm:mt-2 lg:mt-0 lg:col-span-5 lg:flex">
                             <img src={aboutimage} alt="about-us-image" />
                         </div> 
                     </div>
@@ -143,12 +143,12 @@ function Home(props) {
                     </div>
                 </div>
             </div>
-            <div className='pic-grid'>
-                <div className='grid-item-1' onClick={showPublic} onMouseOver={showPublic} onMouseLeave={dontShowPublic}>
+            <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 xl:grid-cols-4 pic-grid'>
+                <div className='max-w-full grid-item-1' onClick={showPublic} onMouseOver={showPublic} onMouseLeave={dontShowPublic}>
                     <h3 className='public-h3 heading'>Public Relations</h3>
                     <div className='public' style={{marginTop:'45px',fontSize:'15px',display:'none'}}>
                         <h2 className='heading' style={{fontSize:'20px'}}>Public Relations</h2>
-                        <p style={{padding:'25px', fontSize: '16px'}}>
+                        <p style={{padding:'10px', fontSize: '16px'}}>
                             You know you’re awesome. We know you’re awesome. Let us tell the world just how awesome you are. Because that’s what great PR is all about.
                             Connect with us!
                             Corporate communication
@@ -161,7 +161,7 @@ function Home(props) {
                     <h3 className='brand-h3 heading'>Brand Management</h3>
                     <div className='bran' style={{marginTop:'25px',fontSize:'15px',display:'none'}}>
                         <h2 className='heading' style={{fontSize:'20px'}}>Brand Management</h2>
-                        <p style={{padding:'25px', fontSize: '16px'}}>
+                        <p style={{padding:'10px', fontSize: '16px'}}>
                         Tell your story! We understand the importance of purpose- driven brand activation, we want you to sustain your brand visibility by showcasing it and telling your impact stories to the world and to the people that matter. Our brand activation strategies will drive results as they will be uniquely customized to exhibit the alignment of your company values and missions.
                         </p>
                     </div>
@@ -170,7 +170,7 @@ function Home(props) {
                     <h3 className='digital-h3 heading'>Digital Marketing</h3>
                     <div className='digital' style={{marginTop:'25px',fontSize:'15px',display:'none'}}>
                         <h2 className='heading' style={{fontSize:'20px'}}>Digital Marketing</h2>
-                        <p style={{padding:'25px', fontSize: '16px'}}>
+                        <p style={{padding:'10px', fontSize: '16px'}}>
                         Yes, we get you. We fully understand that you’re not just doing business, You’re in the business of changing lives. You’re passionate about solving problems in your community and driving positive change. We are also passionate about helping you change the world. To succeed, you need to engage people online, your customers, partners, and supporters.
                         </p>
                     </div>
@@ -179,7 +179,7 @@ function Home(props) {
                     <h3 className='training-h3 heading'>Training</h3>
                     <div className='training' style={{marginTop:'25px',fontSize:'15px',display:'none'}}>
                         <h2 className='heading' style={{fontSize:'20px'}}>Training</h2>
-                        <p style={{padding:'25px', fontSize: '16px'}}>
+                        <p style={{padding:'10px', fontSize: '16px'}}>
                         Yes, we get you. We fully understand that you’re not just doing business, You’re in the business of changing lives. You’re passionate about solving problems in your community and driving positive change. We are also passionate about helping you change the world. To succeed, you need to engage people online, your customers, partners, and supporters.
                         </p>
                     </div>
@@ -319,7 +319,7 @@ function Home(props) {
             </div>
             <div className='talk-more' id='contacts'>
                     <div className='grid-talk-more'>
-                        <div className='hidden md:block grid-talk-1'>
+                        <div className='hidden lg:block grid-talk-1'>
                             <h1>Let’s talk about building your reputation</h1>
                         </div>
                         <div className='grid-talk-2'>

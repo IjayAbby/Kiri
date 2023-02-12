@@ -26,7 +26,12 @@ h1, h2, h3, h4, h5, h6{
   line-height: '2';
   font-size: 60px;
 }
-nav{
+
+.kiri-navbar {
+  background:  linear-gradient(90deg, rgba(172, 27, 41, 0.86) 23.32%, rgba(233, 175, 63, 0.81) 59.86%);
+  backdrop-filter: blur(3rem);
+}
+/* nav{
   position: fixed;
   top:0;
   left: 0;
@@ -104,7 +109,7 @@ nav .ham{
 nav ul a:hover{
   color:#CC2031;
   border-bottom: solid 2px #CC2031;
-}
+} */
 /* Hero Image */
 .Hero{
   padding-top: 50px;
@@ -117,15 +122,12 @@ nav ul a:hover{
   padding-top: 100px;
   height: 600px;
 }
-/* .hero-text{
-  margin-left: 150px;
-  margin-top: 100px;
-} */
-.hero-text .Enhancing{
+
+/* .hero-text .Enhancing{
   font-size: 70px;
   font-weight: lighter;
   color:#fff;
-}
+} */
 .hero-text .text{
   margin-top:20px;
   font-size:25px;
@@ -136,7 +138,13 @@ nav ul a:hover{
 
 button{
   cursor: pointer;
-  /* margin-top:80px; */
+  color:white;
+  background: #CC2031;
+  border:none;
+}
+
+.contact-button{
+  cursor: pointer;
   color:white;
   background: #CC2031;
   width: 140px;
@@ -144,7 +152,6 @@ button{
   border:none;
   font-size: 18px;
 }
-
 /* about section */
 .about{
   background: rgb(245, 238, 230);
@@ -172,16 +179,16 @@ button{
   flex-direction: column;
   align-items: center;
 }
-.pic-grid{
+/* .pic-grid{
   display: grid;
   grid-template-columns: repeat(4,1fr);
   max-width: 100%;
-  color: white;
   text-align: center;
-}
+}*/
 .pic-grid h3{
   margin-top: 200px;
   font-size: 20px;
+  color: white;
 }
 .grid-item-1,.grid-item-2,.grid-item-3,.grid-item-4{
   width: 100%;
@@ -194,6 +201,7 @@ button{
 .grid-item-1:hover{
   background:  linear-gradient(0deg, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),url('./media/Public\ relations\ image.png') no-repeat;
   background-size: cover;
+  color: white;
 } 
 
 .grid-item-2{
@@ -203,6 +211,7 @@ button{
 .grid-item-2:hover{
   background:  linear-gradient(0deg, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),url('./media/Brand\ management\ image.png') no-repeat;
   background-size: cover;
+  color: white;
 }
 .grid-item-3{
   background:  linear-gradient(180deg, rgba(0, 0, 0, 0) 34.01%, rgba(0, 0, 0, 0.8) 76.04%),url('./media/Digital\ Marketing\ Image.png') no-repeat;
@@ -211,6 +220,7 @@ button{
 .grid-item-3:hover{
   background:  linear-gradient(0deg, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),url('./media/Digital\ Marketing\ Image.png') no-repeat;
   background-size: cover;
+  color: white;
 }
 .grid-item-4{
  background:  linear-gradient(180deg, rgba(0, 0, 0, 0) 34.01%, rgba(0, 0, 0, 0.8) 76.04%),url('./media/Training\ Image.png') no-repeat;
@@ -219,7 +229,8 @@ button{
 .grid-item-4:hover{
  background:  linear-gradient(0deg, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),url('./media/Training\ Image.png') no-repeat;
  background-size: cover;
-}
+ color: white;
+} 
 .vectorbuld2{
   background: url('./media/Vectorbuld2.png');
   background-repeat: no-repeat;
@@ -599,7 +610,11 @@ footer{
   display: flex;
   justify-content: space-around;
 }
-footer h2{
+
+.social-links .fa{
+  color: white;
+}
+/* footer h2{
   font-weight: bolder;
   font-size: 30px;
   line-height: 44px;
@@ -629,10 +644,10 @@ footer .social-icons{
   margin-top: 50px;
   display: flex;
   justify-content: center;
-}
+} */
 
 @media screen and (max-width:1000px){
-  nav{
+  /* nav{
     background:  linear-gradient(90deg, rgba(172, 27, 41, 0.86) 23.32%, rgba(233, 175, 63, 0.81) 59.86%);
     width: 100%;
     top:0;
@@ -656,16 +671,16 @@ footer .social-icons{
     top: 35px;
     right: 150px;
     cursor: pointer;
-  }
-  .pic-grid{
+  } */
+  /* .pic-grid{
     margin-left: 25%;
     display: grid;
     grid-template-columns: repeat(1,1fr);
     max-width: 100%;
-  }
+  } */
   .grid-item-1,.grid-item-2,.grid-item-3,.grid-item-4{
     margin-top:20px;
-    width: 70%;
+    width: 100%;
     height: 300px;
     background: url('./media/Public\ relations\ image.png');
     background-size: cover;
@@ -683,15 +698,61 @@ footer .social-icons{
     background-size: cover;
   }
   .recent-articles{
-  padding: 0 0 40px 0;
-  color:white;
-  height: 100%;
-  background: linear-gradient(90deg, #CC2031 31.98%, #E9AF3F 100%);
+    padding: 0 0 40px 0;
+    color:white;
+    height: 100%;
+    background: linear-gradient(90deg, #CC2031 31.98%, #E9AF3F 100%);
+  }
+  .talk-more{
+    background: rgb(245, 238, 230);
+    padding-left: 50px;
+    padding-right: 100px;
+    padding-top: 30px;
+    padding-bottom: 40px;
+    height: 700px;
+  }
+  .grid-talk-more{
+    grid-template-columns: repeat(1,1fr);
+  }
+  .grid-talk-1 h1{
+    font-size: 30px;
+  }
+  .grid-talk-2{
+    margin-top: 10px;
+    margin-left: 10px;
+    background: url('./media/VectorChat2.png') no-repeat right;
+    background-size: 400px;
+  }
+  .grid-talk-2 form{
+    padding-top: 26px;
+    padding-left: 30px;
+    width: 340px;
+    height: 490px;
+    background: rgba(233, 175, 63, 0.2);
+  }
+  .grid-talk-2 form input,.grid-talk-2 form textarea,.add-blog-form input,.add-blog-form textarea{
+    padding-left: 10px;
+    background: rgba(233, 175, 63, 0.2);
+    border: 0.5px solid #000000;
+    width: 300px;
+    height: 30px;
+    font-size: large;
+  }
+  .grid-talk-2 form textarea,.add-blog-form textarea{
+    padding-top: 5px;
+    height: 100px;
+  }
+  .grid-talk-2 form button, .add-blog-form button{
+    border: none;
+    width: 131px;
+    height: 50px;
+    background: #CC2031;
+    color: #FFFAFA;
   }
 }
 
 @media (max-width: 560px) {
-  .nav-menu{
+  /* .nav-menu{
     padding: min(10vh,2rem) 2em;
     z-index: 1;
     transition: ease-out 2s;
@@ -701,19 +762,19 @@ footer .social-icons{
     margin-left: 85%;
     width: 50px; 
     height: 50px;
-  } 
-  .pic-grid{
+  }  */
+  /* .pic-grid{
     margin-left: 10%;
     display: grid;
     grid-template-columns: repeat(1,1fr);
     max-width: 100%;
     color:white;
-  }
+  } */
   
   .grid-item-1,.grid-item-2,.grid-item-3,.grid-item-4{
     margin-top:20px;
     cursor:pointer;
-    width: 90%;
+    width: 100%;
     height: 250px;
     background: linear-gradient(180deg, rgba(0, 0, 0, 0) 34.01%, rgba(0, 0, 0, 0.8) 76.04%),url('./media/Public\ relations\ image.png');
     background-size: cover;
@@ -745,6 +806,53 @@ footer .social-icons{
   .grid-item-4:hover{
     background-size: cover;
    background:  linear-gradient(0deg, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),url('./media/Training\ Image.png');
+  }
+  .talk-more{
+    background: rgb(245, 238, 230);
+    padding-right: 100px;
+    padding-top: 30px;
+    padding-bottom: 40px;
+    height: 600px;
+  }
+  .grid-talk-more{
+    margin-left: -50px;
+    grid-template-columns: repeat(1,1fr);
+  }
+  .grid-talk-1 h1{
+    margin-left: 20px;
+    font-size: 16px;
+  }
+  .grid-talk-2{
+    margin-top: 10px;
+    margin-left: 10px;
+    background: url('./media/VectorChat2.png') no-repeat right;
+    background-size: 400px;
+  }
+  .grid-talk-2 form{
+    padding-top: 26px;
+    padding-left: 30px;
+    width: 100%;
+    height: 550px;
+    background: rgba(233, 175, 63, 0.2);
+  }
+  .grid-talk-2 form input,.grid-talk-2 form textarea,.add-blog-form input,.add-blog-form textarea{
+    padding-left: 10px;
+    background: rgba(233, 175, 63, 0.2);
+    border: 0.5px solid #000000;
+    width: 250px;
+    height: 30px;
+    font-size: large;
+  }
+  .grid-talk-2 form textarea,.add-blog-form textarea{
+    padding-top: 5px;
+    height: 100px;
+  }
+  .grid-talk-2 form button, .add-blog-form button{
+    border: none;
+    width: 131px;
+    height: 50px;
+    background: #CC2031;
+    color: #FFFAFA;
   }
 }
 
